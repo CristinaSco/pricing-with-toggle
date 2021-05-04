@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Pricing with Toggle</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 title">
+          <h3>Our Pricing</h3>
+          <div class="toggle">
+            <span>Annually</span>
+            <label class="switch">
+              <input type="checkbox" id="checkboxSwitch" onclick="check()">
+              <span class="slider round"></span>
+            </label>
+            <span>Monthly</span>
+          </div>
+        </div>
+      </div>
+      <div class="row second">
+        <div class="col-lg-4 content one">
+          <h5>Basic</h5>
+          <div class="price">
+            <span class="dollar">$</span>
+            <h1 id="firstPrice">199.99</h1>
+          </div>
+          <span class="block">500GB Storage</span>
+          <span class="block">2 Users Allowed</span>
+          <span class="block last">Send Up to 3 GB</span>
+          <button type="button">LEARN MORE</button>
+        </div>
+        <div class="col-lg-4 content two">
+          <h5 class="white">Professional</h5>
+          <div class="price">
+            <span class="dollar white">$</span>
+            <h1 class="white" id="secondPrice">249.99</h1>
+          </div>
+          <span class="block white">1 TB Storage</span>
+          <span class="block white">5 Users Allowed</span>
+          <span class="block white last">Send Up to 10 GB</span>
+          <button type="button" class="special">LEARN MORE</button>
+        </div>
+        <div class="col-lg-4 content three">
+          <h5>Master</h5>
+          <div class="price">
+            <span class="dollar">$</span>
+            <h1 id="thirdPrice">399.99</h1>
+          </div>
+          <span class="block">2 TB Storage</span>
+          <span class="block">10 Users Allowed</span>
+          <span class="block last">Send Up to 20 GB</span>
+          <button type="button">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
